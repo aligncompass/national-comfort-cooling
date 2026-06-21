@@ -3,12 +3,11 @@
     "businessName": "National Comfort Cooling",
     "businessType": "HVAC / air-conditioning contractor",
     "slug": "national-comfort-cooling",
-    "base": "/national-comfort-cooling",
-    "siteUrl": "https://aligncompass.com",
+    "base": "/",
+    "siteUrl": "https://nccooling.com",
     "lang": "en",
     "tagline": "Miami AC repair, maintenance & replacement — often same day, with $0-down financing."
   },
-
   "nap": {
     "name": "National Comfort Cooling",
     "addressLocality": "Miami",
@@ -18,12 +17,10 @@
     "hours": "24/7 emergency service",
     "serviceArea": "Miami and surrounding areas"
   },
-
   "cloudinary": {
     "cloudName": "aligncompass",
     "folder": "national-comfort-cooling"
   },
-
   "analytics": {
     "posthog": {
       "enabled": true,
@@ -32,7 +29,6 @@
       "cookieless": true
     }
   },
-
   "design": {
     "colors": {
       "primary": "#0a3a40",
@@ -62,20 +58,38 @@
       "easing": "cubic-bezier(0.22, 1, 0.36, 1)"
     }
   },
-
   "cta": {
-    "primary": { "label": "Call (786) 759-5943", "href": "tel:+17867595943" },
-    "transitional": { "label": "Check $0-down financing", "href": "/national-comfort-cooling/financing" }
+    "primary": {
+      "label": "Call (786) 759-5943",
+      "href": "tel:+17867595943"
+    },
+    "transitional": {
+      "label": "Check $0-down financing",
+      "href": "/financing"
+    }
   },
-
   "nav": [
-    { "label": "Home", "href": "/national-comfort-cooling/" },
-    { "label": "Services", "href": "/national-comfort-cooling/services" },
-    { "label": "Financing", "href": "/national-comfort-cooling/financing" },
-    { "label": "Contact", "href": "/national-comfort-cooling/contact" },
-    { "label": "Call (786) 759-5943", "href": "tel:+17867595943" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "Financing",
+      "href": "/financing"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Call (786) 759-5943",
+      "href": "tel:+17867595943"
+    }
   ],
-
   "pages": [
     {
       "slug": "index",
@@ -84,9 +98,15 @@
         "title": "AC Repair in Miami | Same-Day Service | National Comfort Cooling",
         "description": "Miami AC repair, maintenance & replacement — often same day, 24/7 emergency service, certified techs, all major brands, and $0-down financing. Call (786) 759-5943.",
         "h1": "Cool again today.",
-        "keywords": ["ac repair miami", "emergency ac repair miami", "same-day air conditioning repair miami"]
+        "keywords": [
+          "ac repair miami",
+          "emergency ac repair miami",
+          "same-day air conditioning repair miami"
+        ]
       },
-      "schema": { "type": "HVACBusiness" },
+      "schema": {
+        "type": "HVACBusiness"
+      },
       "sections": [
         {
           "type": "hero",
@@ -94,7 +114,11 @@
           "eyebrow": "Miami · 24/7 emergency AC",
           "headline": "Cool again today.",
           "subhead": "When your AC quits in the Miami heat, we get your home cold again — often the same day. Certified techs, all major brands, and $0 down if you need a new system.",
-          "stat": { "value": "72", "unit": "°F", "label": "the comfort we bring a sweltering Miami home back down to" }
+          "stat": {
+            "value": "72",
+            "unit": "°F",
+            "label": "the comfort we bring a sweltering Miami home back down to"
+          }
         },
         {
           "type": "stakes",
@@ -110,26 +134,53 @@
           "type": "value",
           "heading": "Relief, fast — without the upsell or the upfront sting",
           "items": [
-            { "title": "Same-day repair", "body": "Most AC problems diagnosed and fixed the same day you call." },
-            { "title": "Honest diagnosis first", "body": "We find the real fault and explain repair vs. replace before any work — no pressure." },
-            { "title": "$0 down if you need a new system", "body": "Financing with approval in minutes, all credit backgrounds, so cost isn't the reason you wait in the heat." }
+            {
+              "title": "Same-day repair",
+              "body": "Most AC problems diagnosed and fixed the same day you call."
+            },
+            {
+              "title": "Honest diagnosis first",
+              "body": "We find the real fault and explain repair vs. replace before any work — no pressure."
+            },
+            {
+              "title": "$0 down if you need a new system",
+              "body": "Financing with approval in minutes, all credit backgrounds, so cost isn't the reason you wait in the heat."
+            }
           ]
         },
         {
           "type": "guide",
           "heading": "Miami's heat is relentless. So are we.",
           "empathy": "When the AC dies down here, every hour feels longer. We treat it like the emergency it is — fast, certified, and straight with you.",
-          "authority": ["Certified technicians", "Services all major brands & models", "Same-day & 24/7 emergency", "$0-down financing, minutes to approve"],
-          "image": { "publicId": "national-comfort-cooling/tech-condenser", "alt": "Certified technician inspecting an outdoor AC condenser unit", "focal": "center" }
+          "authority": [
+            "Certified technicians",
+            "Services all major brands & models",
+            "Same-day & 24/7 emergency",
+            "$0-down financing, minutes to approve"
+          ],
+          "image": {
+            "publicId": "national-comfort-cooling/tech-condenser",
+            "alt": "Certified technician inspecting an outdoor AC condenser unit",
+            "focal": "center"
+          }
         },
         {
           "type": "plan",
           "id": "how-it-works",
           "heading": "How it works",
           "steps": [
-            { "title": "Call us", "body": "One call to (786) 759-5943, day or night." },
-            { "title": "We diagnose & explain", "body": "A certified tech finds the fault and gives you a clear price and honest options." },
-            { "title": "You're cool again", "body": "We repair it today — or install the right new system with $0 down." }
+            {
+              "title": "Call us",
+              "body": "One call to (786) 759-5943, day or night."
+            },
+            {
+              "title": "We diagnose & explain",
+              "body": "A certified tech finds the fault and gives you a clear price and honest options."
+            },
+            {
+              "title": "You're cool again",
+              "body": "We repair it today — or install the right new system with $0 down."
+            }
           ]
         },
         {
@@ -142,13 +193,18 @@
             "All credit backgrounds welcome",
             "Monthly payments matched to your budget"
           ],
-          "cta": { "label": "Check $0-down financing", "href": "/national-comfort-cooling/financing" }
+          "cta": {
+            "label": "Check $0-down financing",
+            "href": "/financing"
+          }
         },
         {
           "type": "contact",
           "heading": "Need cool air now?",
           "body": "Call (786) 759-5943 for same-day repairs and 24/7 emergency service across Miami and surrounding areas.",
-          "form": { "enabled": false },
+          "form": {
+            "enabled": false
+          },
           "showNap": true
         }
       ]
@@ -160,27 +216,55 @@
         "title": "AC Repair, Maintenance & Installation in Miami | National Comfort Cooling",
         "description": "Same-day AC repair, preventative maintenance, and installation/replacement for all major brands in Miami. 24/7 emergency service. Call (786) 759-5943.",
         "h1": "Air conditioning, handled",
-        "keywords": ["ac maintenance miami", "ac installation miami", "air conditioning replacement miami"]
+        "keywords": [
+          "ac maintenance miami",
+          "ac installation miami",
+          "air conditioning replacement miami"
+        ]
       },
-      "schema": { "type": "HVACBusiness" },
+      "schema": {
+        "type": "HVACBusiness"
+      },
       "sections": [
         {
           "type": "hero",
           "eyebrow": "Repair · Maintenance · Installation",
           "headline": "Air conditioning, handled",
           "subhead": "Repair, maintenance, and replacement for every major AC system — fast when it's urgent, thorough when it counts.",
-          "image": { "publicId": "national-comfort-cooling/ac-service", "alt": "Modern air-conditioning condenser unit mounted outside a home", "focal": "center" }
+          "image": {
+            "publicId": "national-comfort-cooling/ac-service",
+            "alt": "Modern air-conditioning condenser unit mounted outside a home",
+            "focal": "center"
+          }
         },
         {
           "type": "value",
           "heading": "What we do for your home",
           "items": [
-            { "title": "AC repair & diagnostics", "body": "Cool again today — a certified tech finds the real fault and fixes it, often same day." },
-            { "title": "24/7 emergency service", "body": "Help at 2am, not Monday — we answer breakdowns around the clock." },
-            { "title": "Preventative maintenance", "body": "Fewer surprise breakdowns — a seasonal tune-up that extends your system's life." },
-            { "title": "Installation & replacement", "body": "The right-sized system, installed right — across all major brands, with $0-down financing." },
-            { "title": "Repair-or-replace, honestly", "body": "Never pushed into a new unit — we diagnose first and explain your real options." },
-            { "title": "All major brands & models", "body": "You don't need a specific brand to get help — we service whatever you own." }
+            {
+              "title": "AC repair & diagnostics",
+              "body": "Cool again today — a certified tech finds the real fault and fixes it, often same day."
+            },
+            {
+              "title": "24/7 emergency service",
+              "body": "Help at 2am, not Monday — we answer breakdowns around the clock."
+            },
+            {
+              "title": "Preventative maintenance",
+              "body": "Fewer surprise breakdowns — a seasonal tune-up that extends your system's life."
+            },
+            {
+              "title": "Installation & replacement",
+              "body": "The right-sized system, installed right — across all major brands, with $0-down financing."
+            },
+            {
+              "title": "Repair-or-replace, honestly",
+              "body": "Never pushed into a new unit — we diagnose first and explain your real options."
+            },
+            {
+              "title": "All major brands & models",
+              "body": "You don't need a specific brand to get help — we service whatever you own."
+            }
           ]
         },
         {
@@ -188,16 +272,27 @@
           "id": "how-it-works",
           "heading": "How it works",
           "steps": [
-            { "title": "Call us", "body": "One call to (786) 759-5943, day or night." },
-            { "title": "We diagnose & explain", "body": "A certified tech finds the fault and gives you a clear price and honest options." },
-            { "title": "You're cool again", "body": "We repair it today — or install the right new system with $0 down." }
+            {
+              "title": "Call us",
+              "body": "One call to (786) 759-5943, day or night."
+            },
+            {
+              "title": "We diagnose & explain",
+              "body": "A certified tech finds the fault and gives you a clear price and honest options."
+            },
+            {
+              "title": "You're cool again",
+              "body": "We repair it today — or install the right new system with $0 down."
+            }
           ]
         },
         {
           "type": "contact",
           "heading": "Tell us what's wrong",
           "body": "Call (786) 759-5943 for same-day service across Miami.",
-          "form": { "enabled": false },
+          "form": {
+            "enabled": false
+          },
           "showNap": true
         }
       ]
@@ -209,41 +304,74 @@
         "title": "$0-Down AC Financing in Miami | National Comfort Cooling",
         "description": "Replace your AC with $0 down and monthly payments that fit your budget. Quick approval in minutes, all credit backgrounds. Miami. Call (786) 759-5943.",
         "h1": "A new AC with $0 down",
-        "keywords": ["ac financing miami", "$0 down air conditioning", "hvac financing miami"]
+        "keywords": [
+          "ac financing miami",
+          "$0 down air conditioning",
+          "hvac financing miami"
+        ]
       },
-      "schema": { "type": "HVACBusiness" },
+      "schema": {
+        "type": "HVACBusiness"
+      },
       "sections": [
         {
           "type": "hero",
           "eyebrow": "Financing",
           "headline": "A new AC with $0 down",
           "subhead": "When it's time to replace, cost shouldn't keep you in the heat. Get a new system with no money down and a payment you can plan for.",
-          "image": { "publicId": "national-comfort-cooling/new-system", "alt": "HVAC technician servicing an air-conditioning system", "focal": "center" }
+          "image": {
+            "publicId": "national-comfort-cooling/new-system",
+            "alt": "HVAC technician servicing an air-conditioning system",
+            "focal": "center"
+          }
         },
         {
           "type": "value",
           "heading": "Cooling now, paid over time",
           "items": [
-            { "title": "$0 down on select systems", "body": "Start cooling without a big upfront hit." },
-            { "title": "Approval in minutes", "body": "A quick, simple application — no waiting on an answer." },
-            { "title": "All credit backgrounds", "body": "Options designed to work for a range of situations." },
-            { "title": "Payments that fit", "body": "Monthly plans matched to your budget, explained up front." }
+            {
+              "title": "$0 down on select systems",
+              "body": "Start cooling without a big upfront hit."
+            },
+            {
+              "title": "Approval in minutes",
+              "body": "A quick, simple application — no waiting on an answer."
+            },
+            {
+              "title": "All credit backgrounds",
+              "body": "Options designed to work for a range of situations."
+            },
+            {
+              "title": "Payments that fit",
+              "body": "Monthly plans matched to your budget, explained up front."
+            }
           ]
         },
         {
           "type": "faq",
           "heading": "Financing questions",
           "items": [
-            { "q": "Is it really $0 down?", "a": "$0-down options are available on select systems — we'll confirm what you qualify for before any work." },
-            { "q": "Can I qualify with my credit?", "a": "We work with all credit backgrounds and aim for a quick, low-friction approval. Specific lender terms are confirmed at the time of application." },
-            { "q": "What can I finance?", "a": "Primarily new-system installation and replacement. Ask us about your specific situation when you call." }
+            {
+              "q": "Is it really $0 down?",
+              "a": "$0-down options are available on select systems — we'll confirm what you qualify for before any work."
+            },
+            {
+              "q": "Can I qualify with my credit?",
+              "a": "We work with all credit backgrounds and aim for a quick, low-friction approval. Specific lender terms are confirmed at the time of application."
+            },
+            {
+              "q": "What can I finance?",
+              "a": "Primarily new-system installation and replacement. Ask us about your specific situation when you call."
+            }
           ]
         },
         {
           "type": "contact",
           "heading": "See what you qualify for",
           "body": "Call (786) 759-5943 and we'll walk you through your options.",
-          "form": { "enabled": false },
+          "form": {
+            "enabled": false
+          },
           "showNap": true
         }
       ]
@@ -255,26 +383,31 @@
         "title": "Contact National Comfort Cooling | Miami AC Repair (786) 759-5943",
         "description": "Call National Comfort Cooling for same-day AC repair and 24/7 emergency service in Miami: (786) 759-5943.",
         "h1": "Get in touch",
-        "keywords": ["ac repair miami phone number", "emergency ac miami contact"]
+        "keywords": [
+          "ac repair miami phone number",
+          "emergency ac miami contact"
+        ]
       },
-      "schema": { "type": "HVACBusiness" },
+      "schema": {
+        "type": "HVACBusiness"
+      },
       "sections": [
         {
           "type": "contact",
           "heading": "Cool air, one call away",
           "body": "Call (786) 759-5943 for same-day repairs and 24/7 emergency service across Miami and surrounding areas. Online booking is coming soon — for now, the fastest way to reach us is the phone.",
-          "form": { "enabled": false },
+          "form": {
+            "enabled": false
+          },
           "showNap": true
         }
       ]
     }
   ],
-
   "footer": {
     "blurb": "National Comfort Cooling — same-day AC repair, maintenance & installation for Miami and surrounding areas. 24/7 emergency service.",
     "showHours": true
   },
-
   "flags": [
     "TEST BUILD — recreation of a third-party site to exercise the design-taste gate; not a real customer onboarding.",
     "Service area beyond 'Miami' (exact cities/counties), regular business hours, street address, email, FL HVAC license #, specific certifications, years in business, and reviews/ratings were NOT verifiable and are omitted — not invented.",
