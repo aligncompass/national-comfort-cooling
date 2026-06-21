@@ -39,12 +39,12 @@
       "primaryContrast": "#ffffff",
       "accent": "#0b6f7c",
       "accentContrast": "#ffffff",
-      "bg": "#fbf7f0",
-      "bgMuted": "#f3ece0",
+      "bg": "#f2f7f8",
+      "bgMuted": "#e4edef",
       "surface": "#ffffff",
       "text": "#0a3a40",
-      "textMuted": "#52605f",
-      "border": "#e4dccd"
+      "textMuted": "#4e6669",
+      "border": "#cfdee0"
     },
     "fonts": {
       "heading": "'Big Shoulders Display', 'Arial Narrow', system-ui, sans-serif",
