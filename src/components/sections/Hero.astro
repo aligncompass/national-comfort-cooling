@@ -25,10 +25,12 @@ const SIGNATURE = '#19d3e0';
         sizes="100vw"
         class="h-full w-full object-cover"
       />
-      <!-- Teal scrim keeps the hero cool + on-brand and the copy/numeral legible;
-           the left-weighted gradient darkens the text column further. -->
-      <div class="absolute inset-0 bg-primary/70"></div>
-      <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-primary/25"></div>
+      <!-- Teal scrim keeps the hero cool + on-brand and the copy/numeral legible.
+           Strong + near-uniform so text stays readable in the single-column mobile
+           layout (the old left-weighted gradient left the right side too bright);
+           a gentle vertical gradient adds depth and protects the bottom label. -->
+      <div class="absolute inset-0 bg-primary/80"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-primary/45 via-transparent to-primary/75"></div>
     </div>
   )}
   <div class="relative mx-auto grid max-w-ac items-center gap-10 px-6 py-16 sm:py-24 lg:grid-cols-2">
@@ -39,16 +41,16 @@ const SIGNATURE = '#19d3e0';
           style={dark ? `color:${SIGNATURE}` : undefined}
         >{section.eyebrow}</p>
       )}
-      <h1 class:list={['font-heading text-5xl font-bold uppercase leading-[0.95] tracking-tight sm:text-6xl', dark ? 'text-primary-contrast' : 'text-ink']}>{section.headline}</h1>
+      <h1 class:list={['font-heading text-5xl font-bold uppercase leading-[0.95] tracking-tight sm:text-6xl', dark ? 'text-primary-contrast [text-shadow:0_2px_18px_rgba(8,58,64,0.6)]' : 'text-ink']}>{section.headline}</h1>
       {section.subhead && (
-        <p class:list={['mt-5 max-w-xl text-lg', dark ? 'text-primary-contrast/85' : 'text-muted']}>{section.subhead}</p>
+        <p class:list={['mt-5 max-w-xl text-lg', dark ? 'text-primary-contrast [text-shadow:0_1px_14px_rgba(8,58,64,0.8)]' : 'text-muted']}>{section.subhead}</p>
       )}
       <div class="mt-8 flex flex-wrap items-center gap-4">
         {cta?.primary && (
           <a href={cta.primary.href} class="inline-flex items-center rounded-ac bg-accent px-6 py-3 font-semibold text-accent-contrast shadow-ac transition-transform hover:-translate-y-0.5">{cta.primary.label}</a>
         )}
         {cta?.transitional && (
-          <a href={cta.transitional.href} class:list={['inline-flex items-center font-medium underline-offset-4 hover:underline', dark ? 'text-primary-contrast' : 'text-ink']}>{cta.transitional.label} →</a>
+          <a href={cta.transitional.href} class:list={['inline-flex items-center font-medium underline-offset-4 hover:underline', dark ? 'text-primary-contrast [text-shadow:0_1px_12px_rgba(8,58,64,0.8)]' : 'text-ink']}>{cta.transitional.label} →</a>
         )}
       </div>
     </div>
@@ -60,7 +62,7 @@ const SIGNATURE = '#19d3e0';
           {stat.unit && <span class="mt-4 text-4xl sm:text-5xl">{stat.unit}</span>}
         </div>
         {stat.label && (
-          <p class:list={['mt-2 max-w-xs text-sm uppercase tracking-[0.12em]', dark ? 'text-primary-contrast/75' : 'text-muted']}>{stat.label}</p>
+          <p class:list={['mt-2 max-w-xs text-sm uppercase tracking-[0.12em]', dark ? 'text-primary-contrast/90 [text-shadow:0_1px_12px_rgba(8,58,64,0.85)]' : 'text-muted']}>{stat.label}</p>
         )}
       </div>
     ) : img && !dark ? (
