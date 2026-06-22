@@ -25,12 +25,12 @@ const SIGNATURE = '#19d3e0';
         sizes="100vw"
         class="h-full w-full object-cover"
       />
-      <!-- Teal scrim keeps the hero cool + on-brand and the copy/numeral legible.
-           Strong + near-uniform so text stays readable in the single-column mobile
-           layout (the old left-weighted gradient left the right side too bright);
-           a gentle vertical gradient adds depth and protects the bottom label. -->
-      <div class="absolute inset-0 bg-primary/80"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-primary/45 via-transparent to-primary/75"></div>
+      <!-- Teal scrim over the photo. NOTE: bg-primary/NN opacity utilities don't
+           render (the brand color is a CSS var holding a hex, so Tailwind can't
+           compute the alpha and drops the rule), so we use an explicit rgba
+           gradient. Strong + near-uniform so copy/label stay legible in the
+           single-column mobile layout; ~10-20% of the photo still shows through. -->
+      <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(10,58,64,0.92), rgba(10,58,64,0.8) 45%, rgba(10,58,64,0.92))"></div>
     </div>
   )}
   <div class="relative mx-auto grid max-w-ac items-center gap-10 px-6 py-16 sm:py-24 lg:grid-cols-2">
@@ -62,7 +62,7 @@ const SIGNATURE = '#19d3e0';
           {stat.unit && <span class="mt-4 text-4xl sm:text-5xl">{stat.unit}</span>}
         </div>
         {stat.label && (
-          <p class:list={['mt-2 max-w-xs text-sm uppercase tracking-[0.12em]', dark ? 'text-primary-contrast/90 [text-shadow:0_1px_12px_rgba(8,58,64,0.85)]' : 'text-muted']}>{stat.label}</p>
+          <p class:list={['mt-2 max-w-xs text-sm uppercase tracking-[0.12em]', dark ? 'text-primary-contrast [text-shadow:0_1px_12px_rgba(8,58,64,0.85)]' : 'text-muted']}>{stat.label}</p>
         )}
       </div>
     ) : img && !dark ? (
